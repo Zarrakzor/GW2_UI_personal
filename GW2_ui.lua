@@ -14,7 +14,7 @@ local l = CreateFrame("Frame") -- Main event frame
 
 GW.VERSION_STRING = "GW2_UI @project-version@"
 
--- Make a global GW variable , so others cann access out functions
+-- Make a global GW variable , so others can access our functions
 GW2_ADDON = GW
 
 if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
@@ -23,7 +23,7 @@ if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
 end
 
 if GW.CheckForPasteAddon() and GW.settings.ACTIONBARS_ENABLED and not IsIncompatibleAddonLoadedOrOverride("Actionbars", true) then
-    GW.Notice("|cffff0000You have installed the Addon 'Paste'. This can cause, that our actionbars are empty. Deactive 'Paste' to use our actionbars.|r")
+    GW.Notice("|cffff0000You have installed the Addon 'Paste'. This can cause our actionbars to be empty. Deactivate 'Paste' to use our actionbars.|r")
 end
 
 local loaded = false
